@@ -1,0 +1,18 @@
+{
+    "id": 13,
+    "name": "zhang san",
+    "password": "123456"
+}
+
+{
+    "id": 15,
+    "name": "li si",
+    "password": "666666"
+}
+
+login 
+{"msgid": 1, "id": 13,"password": "123456"}
+{"msgid": 1, "id": 15,"password": "666666"}
+
+chat
+{"msgid": 5, "id": 13, "toid": 15, "msg": "hello"}

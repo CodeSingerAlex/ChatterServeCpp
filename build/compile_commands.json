@@ -1,17 +1,32 @@
 [
 {
   "directory": "/home/lighthouse/ChatterServeCpp/build/src/server",
-  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/$(PROJECT_SOURCE_DIR)/include -I/home/lighthouse/ChatterServeCpp/$(PROJECT_SOURCE_DIR)/include/server -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/chatserver.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/chatserver.cpp",
+  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/chatserver.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/chatserver.cpp",
   "file": "/home/lighthouse/ChatterServeCpp/src/server/chatserver.cpp"
 },
 {
   "directory": "/home/lighthouse/ChatterServeCpp/build/src/server",
-  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/$(PROJECT_SOURCE_DIR)/include -I/home/lighthouse/ChatterServeCpp/$(PROJECT_SOURCE_DIR)/include/server -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/chatservice.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/chatservice.cpp",
+  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/chatservice.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/chatservice.cpp",
   "file": "/home/lighthouse/ChatterServeCpp/src/server/chatservice.cpp"
 },
 {
   "directory": "/home/lighthouse/ChatterServeCpp/build/src/server",
-  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/$(PROJECT_SOURCE_DIR)/include -I/home/lighthouse/ChatterServeCpp/$(PROJECT_SOURCE_DIR)/include/server -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/main.cpp",
+  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/main.cpp",
   "file": "/home/lighthouse/ChatterServeCpp/src/server/main.cpp"
+},
+{
+  "directory": "/home/lighthouse/ChatterServeCpp/build/src/server",
+  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/offlinemessagemodel.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/offlinemessagemodel.cpp",
+  "file": "/home/lighthouse/ChatterServeCpp/src/server/offlinemessagemodel.cpp"
+},
+{
+  "directory": "/home/lighthouse/ChatterServeCpp/build/src/server",
+  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/db/db.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/db/db.cpp",
+  "file": "/home/lighthouse/ChatterServeCpp/src/server/db/db.cpp"
+},
+{
+  "directory": "/home/lighthouse/ChatterServeCpp/build/src/server",
+  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/db/usermodel.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/db/usermodel.cpp",
+  "file": "/home/lighthouse/ChatterServeCpp/src/server/db/usermodel.cpp"
 }
 ]

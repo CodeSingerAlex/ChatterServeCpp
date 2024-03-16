@@ -179,6 +179,60 @@ chatservice.cpp.s:
 	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.s
 .PHONY : chatservice.cpp.s
 
+db/db.o: db/db.cpp.o
+
+.PHONY : db/db.o
+
+# target to build an object file
+db/db.cpp.o:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o
+.PHONY : db/db.cpp.o
+
+db/db.i: db/db.cpp.i
+
+.PHONY : db/db.i
+
+# target to preprocess a source file
+db/db.cpp.i:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/db.cpp.i
+.PHONY : db/db.cpp.i
+
+db/db.s: db/db.cpp.s
+
+.PHONY : db/db.s
+
+# target to generate assembly for a file
+db/db.cpp.s:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/db.cpp.s
+.PHONY : db/db.cpp.s
+
+db/usermodel.o: db/usermodel.cpp.o
+
+.PHONY : db/usermodel.o
+
+# target to build an object file
+db/usermodel.cpp.o:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/usermodel.cpp.o
+.PHONY : db/usermodel.cpp.o
+
+db/usermodel.i: db/usermodel.cpp.i
+
+.PHONY : db/usermodel.i
+
+# target to preprocess a source file
+db/usermodel.cpp.i:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/usermodel.cpp.i
+.PHONY : db/usermodel.cpp.i
+
+db/usermodel.s: db/usermodel.cpp.s
+
+.PHONY : db/usermodel.s
+
+# target to generate assembly for a file
+db/usermodel.cpp.s:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/usermodel.cpp.s
+.PHONY : db/usermodel.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -206,6 +260,33 @@ main.cpp.s:
 	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+offlinemessagemodel.o: offlinemessagemodel.cpp.o
+
+.PHONY : offlinemessagemodel.o
+
+# target to build an object file
+offlinemessagemodel.cpp.o:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cpp.o
+.PHONY : offlinemessagemodel.cpp.o
+
+offlinemessagemodel.i: offlinemessagemodel.cpp.i
+
+.PHONY : offlinemessagemodel.i
+
+# target to preprocess a source file
+offlinemessagemodel.cpp.i:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cpp.i
+.PHONY : offlinemessagemodel.cpp.i
+
+offlinemessagemodel.s: offlinemessagemodel.cpp.s
+
+.PHONY : offlinemessagemodel.s
+
+# target to generate assembly for a file
+offlinemessagemodel.cpp.s:
+	cd /home/lighthouse/ChatterServeCpp/build && $(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/offlinemessagemodel.cpp.s
+.PHONY : offlinemessagemodel.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -221,9 +302,18 @@ help:
 	@echo "... chatservice.o"
 	@echo "... chatservice.i"
 	@echo "... chatservice.s"
+	@echo "... db/db.o"
+	@echo "... db/db.i"
+	@echo "... db/db.s"
+	@echo "... db/usermodel.o"
+	@echo "... db/usermodel.i"
+	@echo "... db/usermodel.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... offlinemessagemodel.o"
+	@echo "... offlinemessagemodel.i"
+	@echo "... offlinemessagemodel.s"
 .PHONY : help
 
 

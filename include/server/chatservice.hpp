@@ -4,6 +4,10 @@
 #include <muduo/net/TcpConnection.h>
 #include <unordered_map>
 #include <functional>
+#include <mutex>
+
+#include "usermodel.hpp"
+#include "offlinemessagemodel.hpp"
 
 using namespace std;
 using namespace muduo;
@@ -26,12 +30,32 @@ public:
     // 处理注册业务
     void reg(const TcpConnectionPtr& conn, json& js, Timestamp time);
 
+    // 一对一聊天业务
+    void oneChat(const TcpConnectionPtr& conn, json& js, Timestamp time);
+    
     // 获取消息对应的处理器
     HandlFunc getHandler(int msgid);
+
+    // 处理客户端异常退出
+    void clientCloseException(const TcpConnectionPtr& conn);
+    
 private:
     ChatService();
 
     // 匹配消息id和业务处理方法
     unordered_map<int, HandlFunc> _msgHandlerMap;
+
+    // User表的操作对象
+    UserModel _userModel;
+
+    // 互斥锁，保证_userModel线程安全
+    mutex _connMutex;
+
+    // 存储在线用户的通信连接
+    unordered_map<int, TcpConnectionPtr> _userConnMap;
+
+    // 离线消息存储对象
+    OfflineMsgModel _offlineMsgModel;
+
 };
 #endif

@@ -1,7 +1,6 @@
 #include "chatserver.hpp"
 #include "json.hpp"
 #include "chatservice.hpp" 
-
 #include <iostream>
 #include <functional>
 #include <string>
@@ -34,7 +33,8 @@ void ChatServer::start() {
 
 // 上报连接信息
 void ChatServer::onConnection(const TcpConnectionPtr& conn) {
-    if (conn->connected()) {
+    if (!conn->connected()) {
+        ChatService::instance()->clientCloseException(conn);
         conn -> shutdown();
     }
 }
