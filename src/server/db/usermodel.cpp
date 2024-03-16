@@ -1,5 +1,6 @@
 #include "usermodel.hpp"
 #include "db.hpp"
+#include "public.hpp"
 
 #include <iostream>
 using namespace std;
@@ -58,4 +59,16 @@ bool UserModel::updateState(User user) {
         }
     }
     return false;
-} 
+}
+
+void UserModel::resetState() {
+    // 1. 组装sql语句
+    char sql[1024] = {0};
+    sprintf(sql, "update user set state = '%s' where state = '%s'",
+        OFFLINE.c_str(), ONLINE.c_str());
+    // 2. 执行sql语句
+    Mysql mysql;
+    if (mysql.connect()) {
+        mysql.update(sql);
+    }
+}

@@ -1,9 +1,13 @@
 #ifndef PUBLIC_H
 #define PUBLIC_H
 
+#include <string>
+using namespace std;
 /*
 service 和 client 的公共文件
 */
+const static string ONLINE = "online";
+const static string OFFLINE = "offline";
 
 enum EnMsgType {
     LOGIN_MSG = 1, // 登录消息
@@ -11,6 +15,7 @@ enum EnMsgType {
     REG_MSG_ACK, // 注册响应消息
     LOGIN_MSG_ACK, // 登录响应消息
     ONE_CHAT_MSG, // 聊天消息
+    ADD_FRIEND_MSG // 添加好友
 };
 
 #endif
