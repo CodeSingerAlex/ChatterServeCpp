@@ -16,3 +16,6 @@ login
 
 chat
 {"msgid": 5, "id": 13, "toid": 15, "msg": "hello"}
+
+addFriend
+{"msgid": 6, "id": 13, "friendid": 16}
