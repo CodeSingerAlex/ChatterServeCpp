@@ -84,6 +84,7 @@ void ChatService::login(const TcpConnectionPtr& conn, json& js, Timestamp time) 
                     js["state"] = user.getState(); 
                     friendsVec.push_back(js.dump());
                 }
+                response["friendslist"] = friendsVec;
             }
             conn->send(response.dump());
         }
