@@ -44,7 +44,6 @@ void ChatServer::onMessage(const TcpConnectionPtr& conn, Buffer* buffer, Timesta
     string buf = buffer->retrieveAllAsString();
     json js = json::parse(buf);
     cout << js.dump() << js["msgid"] << endl;
-    conn->send("hello, this is server");
     auto it = ChatService::instance()->getHandler(js["msgid"].get<int>());
     it(conn, js, time);
 }

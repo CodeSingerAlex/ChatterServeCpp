@@ -38,5 +38,10 @@
   "directory": "/home/lighthouse/ChatterServeCpp/build/src/server",
   "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/include/server/model -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatServer.dir/model/usermodel.cpp.o -c /home/lighthouse/ChatterServeCpp/src/server/model/usermodel.cpp",
   "file": "/home/lighthouse/ChatterServeCpp/src/server/model/usermodel.cpp"
+},
+{
+  "directory": "/home/lighthouse/ChatterServeCpp/build/src/client",
+  "command": "/usr/bin/c++   -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/include/server/model -I/home/lighthouse/ChatterServeCpp/thirdparty  -g -g   -o CMakeFiles/ChatClient.dir/main.cpp.o -c /home/lighthouse/ChatterServeCpp/src/client/main.cpp",
+  "file": "/home/lighthouse/ChatterServeCpp/src/client/main.cpp"
 }
 ]

@@ -52,7 +52,7 @@ vector<Group> GroupModel::queryGroups(int userid) {
     }
 
     for(Group &group: groupVec) {
-        sprintf(sql, "select u.id, u.name, u.state, g.role from user as u inner join groupuser as g on u.id = g.userid where g.groupid = %d", group.getId());
+        sprintf(sql, "select u.id, u.name, u.state, g.grouprole from user as u inner join groupuser as g on u.id = g.userid where g.groupid = %d", group.getId());
         
         MYSQL_RES *res = mysql.query(sql);
         if(res != nullptr) {
@@ -73,7 +73,7 @@ vector<Group> GroupModel::queryGroups(int userid) {
 
 vector<int> GroupModel::queryGroupUsers(int userid, int groupid) {
     char sql[1024];
-    sprintf(sql, "select userid from groupuser where groupid = %d and where userid = %d", groupid, userid);
+    sprintf(sql, "select userid from groupuser where groupid = %d and userid != %d", groupid, userid);
 
     vector<int> vec;
 
@@ -81,7 +81,7 @@ vector<int> GroupModel::queryGroupUsers(int userid, int groupid) {
     if(mysql.connect()) {
         MYSQL_RES *res = mysql.query(sql);
         if(res != nullptr) {
-            MYSQL_ROW row;  
+            MYSQL_ROW row;
             while((row = mysql_fetch_row(res)) != nullptr) {
                 vec.push_back(atoi(row[0]));
             }

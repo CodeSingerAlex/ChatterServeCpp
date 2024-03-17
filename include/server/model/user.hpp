@@ -2,15 +2,18 @@
 #define USER_H
 
 #include <string>
+
+#include "public.hpp"
 using namespace std;
 
 class User {
 public:
-    User() {
-        _id = 0;
-        _name = "";
-        _password = "";
-        _state = "";
+
+    User(int id = -1, string name = "", string pwd = "", string state = OFFLINE) {
+        _id = id;
+        _name = name;
+        _password = pwd;
+        _state = state;
     }
     
     void setId(int id) {
