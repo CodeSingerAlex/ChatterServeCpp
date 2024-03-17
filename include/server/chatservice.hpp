@@ -9,6 +9,7 @@
 #include "usermodel.hpp"
 #include "offlinemessagemodel.hpp"
 #include "friendmodel.hpp"
+#include "groupmodel.hpp"
 
 using namespace std;
 using namespace muduo;
@@ -28,6 +29,9 @@ public:
     // 处理登录业务
     void login(const TcpConnectionPtr& conn, json& js, Timestamp time);
 
+    // 处理注销业务
+    void loginout(const TcpConnectionPtr& conn, json& js, Timestamp time);
+
     // 处理注册业务
     void reg(const TcpConnectionPtr& conn, json& js, Timestamp time);
 
@@ -37,6 +41,15 @@ public:
     // 添加好友业务
     void addFriend(const TcpConnectionPtr& conn, json& js, Timestamp time);
 
+    // 创建群组业务
+    void createGroup(const TcpConnectionPtr& conn, json& js, Timestamp time);
+
+    // 加入群组业务
+    void addGroup(const TcpConnectionPtr& conn, json& js, Timestamp time);
+
+    // 群聊天业务
+    void groupChat(const TcpConnectionPtr& conn, json& js, Timestamp time);
+    
     // 获取消息对应的处理器
     HandlFunc getHandler(int msgid);
 
@@ -67,5 +80,7 @@ private:
     // 好友列表
     FriendModel _friendModel;
 
+    // 群组对象
+    GroupModel _groupModel;
 };
 #endif

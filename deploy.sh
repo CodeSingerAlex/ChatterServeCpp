@@ -3,8 +3,8 @@
 # abort on errors
 set -e
 
-git checkout -b feature-group-chat
+git checkout -b feature-ChatClient
 git add -A
-git commit -m '新增群聊功能'
+git commit -m '添加聊天客户端'
 
-git push -f git@github.com:CodeSingerAlex/ChatterServeCpp.git feature-group-chat
+git push -f git@github.com:CodeSingerAlex/ChatterServeCpp.git feature-ChatClient

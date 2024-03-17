@@ -7,7 +7,7 @@ using namespace std;
 
 void OfflineMsgModel::insert(int userid, string msg) {
 
-    char sql[100] = {0};
+    char sql[1024] = {0};
     sprintf(sql, "insert into offlinemessage value(%d, '%s')", userid, msg.c_str());
 
     Mysql mysql;
@@ -18,7 +18,7 @@ void OfflineMsgModel::insert(int userid, string msg) {
 
 void OfflineMsgModel::remove(int userid) {
 
-    char sql[100] = {0};
+    char sql[1024] = {0};
     sprintf(sql, "delete from offlinemessage where userid = %d", userid);
 
     Mysql mysql;
@@ -29,7 +29,7 @@ void OfflineMsgModel::remove(int userid) {
 
 vector<string> OfflineMsgModel::query(int userid){
 
-    char sql[100] = {0};
+    char sql[1024] = {0};
     sprintf(sql, "select message from offlinemessage where userid = %d", userid);
 
     Mysql mysql;
