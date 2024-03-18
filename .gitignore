@@ -1,10 +1,6 @@
 # 忽视测试文件
 /test/
 
-# 忽视编译文件
-/build/*
-/build/autobuild.sh
-
 # 忽视备忘录文件
 /message.txt
 /problems.txt
