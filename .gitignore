@@ -1,7 +1,7 @@
 # 忽视测试文件
 /test/
 
-# 忽视备忘录文件
+# 忽视备忘录
 /message.txt
 /problems.txt
 
