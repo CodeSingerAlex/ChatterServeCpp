@@ -6,5 +6,5 @@ CXX_FLAGS = -g -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/include/server/model -I/home/lighthouse/ChatterServeCpp/thirdparty 
+CXX_INCLUDES = -I/home/lighthouse/ChatterServeCpp/include -I/home/lighthouse/ChatterServeCpp/include/server -I/home/lighthouse/ChatterServeCpp/include/server/db -I/home/lighthouse/ChatterServeCpp/include/server/model -I/home/lighthouse/ChatterServeCpp/include/server/redis -I/home/lighthouse/ChatterServeCpp/thirdparty 
 

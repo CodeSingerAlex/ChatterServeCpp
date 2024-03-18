@@ -1,3 +1,4 @@
+#include <iostream>
 #include "chatserver.hpp"
 #include "chatservice.hpp"
 #include "signal.h"
@@ -8,10 +9,20 @@ void resetHandler(int) {
     ChatService::instance()->reset();
     exit(-1);
 }
-int main() {
+int main(int argc, char **argv) {
+    if (argc < 3) {
+        cerr << "command invalid! example: ./ChatServer 127.0.0.1 6000" << endl;
+        exit(-1);
+    }
+
+    char *ip = argv[1];
+
+    uint16_t port = atoi(argv[2]);
+
     signal(SIGINT, resetHandler);
+
     EventLoop loop;
-    InetAddress listenAddr("127.0.0.1", 6000);
+    InetAddress listenAddr(ip, port);
     ChatServer server(&loop, listenAddr, "ChatServer");
 
     server.start();
