@@ -12,6 +12,7 @@ src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o
  ../include/server/model/offlinemessagemodel.hpp
  ../include/server/model/user.hpp
  ../include/server/model/usermodel.hpp
+ ../include/server/redis/redis.hpp
  ../thirdparty/json.hpp
  /home/lighthouse/ChatterServeCpp/src/server/chatserver.cpp
 src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o
@@ -24,6 +25,7 @@ src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o
  ../include/server/model/offlinemessagemodel.hpp
  ../include/server/model/user.hpp
  ../include/server/model/usermodel.hpp
+ ../include/server/redis/redis.hpp
  ../thirdparty/json.hpp
  /home/lighthouse/ChatterServeCpp/src/server/chatservice.cpp
 src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o
@@ -40,6 +42,7 @@ src/server/CMakeFiles/ChatServer.dir/main.cpp.o
  ../include/server/model/offlinemessagemodel.hpp
  ../include/server/model/user.hpp
  ../include/server/model/usermodel.hpp
+ ../include/server/redis/redis.hpp
  ../thirdparty/json.hpp
  /home/lighthouse/ChatterServeCpp/src/server/main.cpp
 src/server/CMakeFiles/ChatServer.dir/model/friendmodel.cpp.o
@@ -66,3 +69,6 @@ src/server/CMakeFiles/ChatServer.dir/model/usermodel.cpp.o
  ../include/server/model/user.hpp
  ../include/server/model/usermodel.hpp
  /home/lighthouse/ChatterServeCpp/src/server/model/usermodel.cpp
+src/server/CMakeFiles/ChatServer.dir/redis/redis.cpp.o
+ ../include/server/redis/redis.hpp
+ /home/lighthouse/ChatterServeCpp/src/server/redis/redis.cpp

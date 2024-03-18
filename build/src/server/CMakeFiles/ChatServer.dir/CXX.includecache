@@ -35,6 +35,8 @@ friendmodel.hpp
 ../include/server/friendmodel.hpp
 groupmodel.hpp
 ../include/server/groupmodel.hpp
+redis.hpp
+../include/server/redis.hpp
 json.hpp
 ../include/server/json.hpp
 
@@ -85,6 +87,16 @@ public.hpp
 ../include/server/model/usermodel.hpp
 user.hpp
 ../include/server/model/user.hpp
+
+../include/server/redis/redis.hpp
+hiredis/hiredis.h
+-
+thread
+-
+functional
+-
+string
+-
 
 ../thirdparty/json.hpp
 algorithm
@@ -440,7 +452,15 @@ user.hpp
 muduo/base/Logging.h
 -
 
+/home/lighthouse/ChatterServeCpp/src/server/db/db.cpp
+db.hpp
+/home/lighthouse/ChatterServeCpp/src/server/db/db.hpp
+muduo/base/Logging.h
+-
+
 /home/lighthouse/ChatterServeCpp/src/server/main.cpp
+iostream
+-
 chatserver.hpp
 /home/lighthouse/ChatterServeCpp/src/server/chatserver.hpp
 chatservice.hpp
@@ -462,6 +482,16 @@ groupmodel.hpp
 db.hpp
 /home/lighthouse/ChatterServeCpp/src/server/model/db.hpp
 
+/home/lighthouse/ChatterServeCpp/src/server/model/offlinemessagemodel.cpp
+offlinemessagemodel.hpp
+/home/lighthouse/ChatterServeCpp/src/server/model/offlinemessagemodel.hpp
+db.hpp
+/home/lighthouse/ChatterServeCpp/src/server/model/db.hpp
+iostream
+-
+vector
+-
+
 /home/lighthouse/ChatterServeCpp/src/server/model/usermodel.cpp
 usermodel.hpp
 /home/lighthouse/ChatterServeCpp/src/server/model/usermodel.hpp
@@ -471,4 +501,12 @@ public.hpp
 /home/lighthouse/ChatterServeCpp/src/server/model/public.hpp
 iostream
 -
+
+/home/lighthouse/ChatterServeCpp/src/server/redis/redis.cpp
+thread
+-
+iostream
+-
+redis.hpp
+/home/lighthouse/ChatterServeCpp/src/server/redis/redis.hpp
 
